@@ -1,0 +1,10 @@
+version: "3"
+services:
+  fastapi_sample:
+    # ビルドするDockerfileのでディレクトリ相対パス
+    build: ./
+    container_name: fastapi_sample
+    ports:
+      - 8888:8000
+    environment:
+      TZ: "Asia/Tokyo"
